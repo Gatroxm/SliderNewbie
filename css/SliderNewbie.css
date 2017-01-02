@@ -1,0 +1,37 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.fromContainer{
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.left, .rigth{
+	position: absolute;
+	top: 50%;
+	font-size: 4em;
+	height: 50px;
+	border: none;
+	color: #f7f7f7;
+	background-color: #00ccc5;
+	border-radius: 100px;
+}
+.left{
+	left: 0px;
+}
+.rigth{
+	right: 0px;
+}
+.fromContainer .sliderContainer{
+	white-space: nowrap;
+}
+.fromContainer .sliderContainer .slide {
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
