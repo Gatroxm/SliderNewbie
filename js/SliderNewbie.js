@@ -1,4 +1,6 @@
 var indicador = 0;
+var spedd = 500;
+var Time = 5000;
 jQuery(document).ready(function($) {
 	$('.left').on('click', function(event) {
 		event.preventDefault();
@@ -32,5 +34,8 @@ function moveSlider(direccion){
 
 	$(".fromContainer .sliderContainer").animate({
 		'margin-left': -(indicador * $('.fromContainer').width())+'px'
-	});
+	}, spedd);
 }
+setInterval(function(){
+	moveSlider();
+},Time);
